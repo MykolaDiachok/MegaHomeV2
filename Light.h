@@ -12,6 +12,7 @@ class Light
     void off();
     void nextstep();
     uint8_t status();
+    uint8_t getPin();
   private:
     uint8_t _pin;
 };

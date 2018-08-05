@@ -13,6 +13,12 @@ Light::Light(uint8_t pin)
     _pin = pin;
 }
 
+uint8_t Light::getPin()
+{
+    return _pin;
+}
+
+
 void Light::on()
 {
     digitalWrite(_pin, HIGH);

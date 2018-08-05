@@ -7,13 +7,16 @@
 #include "Light.h"
 
 class Light;
+#define MY_COUNT_LIGHTS 17
 
 class LightSwitchBedRoom : public LightSwitch, public LightSwitchDb
 {
 
 public:
-  LightSwitchBalcony(Light *lightBalcony);
+  int _lightCount = MY_COUNT_LIGHTS;
+  LightSwitchBedRoom(Light *lightBedRoom, Light *braceBedRoom0, Light *braceBedRoom1, Light *lightHall);
 
+  void setLights(Light *lights[MY_COUNT_LIGHTS]);
   void click0_Dn();
   void click0_Db();
   void click0_Long();
@@ -40,7 +43,12 @@ public:
 
 private:
   uint8_t _pin[6];
-  Light *_lightBalcony;
+  Light *_lightBedRoom;
+  Light *_braceBedRoom0;
+  Light *_braceBedRoom1;
+
+  Light *_lights[MY_COUNT_LIGHTS];
+  bool statuses[MY_COUNT_LIGHTS];
 };
 
 #endif
