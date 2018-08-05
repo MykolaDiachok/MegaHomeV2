@@ -14,7 +14,7 @@ Ventilator::Ventilator() {}
 
 void Ventilator::on()
 {
-    //TODO включить когда сделают разводку1
+    //TODO включить когда сделают разводку
     //digitalWrite(_pin, HIGH); 
     Serial.print("ventilator=on; pin=");
     Serial.println(_pin);
