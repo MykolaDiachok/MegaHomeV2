@@ -37,7 +37,7 @@ void LightSwitchBedRoom::click0_Long()
 }
 
 void LightSwitchBedRoom::click1_Dn() {
-    _hall
+    _lightHall->nextstep();
 }
 void LightSwitchBedRoom::click1_Db() {}
 void LightSwitchBedRoom::click1_Long() {}

@@ -46,6 +46,7 @@ private:
   Light *_lightBedRoom;
   Light *_braceBedRoom0;
   Light *_braceBedRoom1;
+  Light *_lightHall;
 
   Light *_lights[MY_COUNT_LIGHTS];
   bool statuses[MY_COUNT_LIGHTS];

@@ -9,6 +9,7 @@
 #include "LightSwitchKitchen.h"
 #include "LightSwitchLivingRoom.h"
 #include "LightSwitchBedRoom.h"
+#include "LightSwitchChildRoom.h"
 
 Button hButton;
 
@@ -59,6 +60,9 @@ LightSwitchLivingRoom switchLivingRoom(&livingRoomLight, &livingRoomBrace);
 
 //6 buttons
 LightSwitchBedRoom switchBedRoom(&bedRoomLight, &bedRoomBrace0, &bedRoomBrace1, &hallLight);
+
+//4 buttons
+LightSwitchChildRoom switchChildRoom(&childRoomLight, &childRoomBrace, &hallLight);
 
 void setup()
 {
