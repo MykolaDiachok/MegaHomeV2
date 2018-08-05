@@ -1,0 +1,5 @@
+{
+    "sketch": "MegaHome.ino",
+    "board": "arduino:avr:leonardoeth",    
+    "port": "COM11"
+}
